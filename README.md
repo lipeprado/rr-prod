@@ -27,8 +27,8 @@
 ### 1. Get the source code
 
 ```sh
-$ git clone -b master https://github.com/diegohaz/arc my-app
-$ cd my-app
+$ git clone -b master https://github.com/lipeprado/rr-prod <your-app>
+$ cd <your-app>
 ```
 
 You will probably want to remove ARc git history and start a brand new repository:
@@ -55,3 +55,33 @@ It will start the development server with [HMR](https://webpack.github.io/docs/h
 > [http://localhost:3000](http://localhost:3000) — Development server<br>
 
 Now you can open [http://localhost:3000](http://localhost:3000) in browser and start developing.
+
+### 4. Run the tests
+
+Just run tests:
+
+```sh
+$ npm run test
+```
+
+Run coverage
+
+```sh
+$ npm run coverage
+```
+
+#### 5. Run Build Production
+
+Run env "Production"
+
+```sh
+$ npm run env:prod
+```
+
+Run Build Production
+
+```sh
+$ npm run build
+```
+
+Let's Code.
