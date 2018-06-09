@@ -1,0 +1,36 @@
+@import './fonts.sass'
+@import './colors.sass'
+
+$lite: "Montserrat-light"
+$regular: "Montserrat-regular"
+$medium: "Montserrat-medium"
+$bold: "Montserrat-bold"
+*,
+*::before,
+*::after
+  margin: 0
+  padding: 0
+  box-sizing: inherit
+  box-sizing: border-box
+  font-family: $regular
+
+
+button
+  appearance: none
+  border-width: 0
+  border-style: none
+  border-color: transparent
+  border-image: none
+  outline-color: transparent
+
+html
+  box-sizing: border-box
+  font-size: 62.5% // means 1rem will be equal 10px
+
+body
+  background-color: $background
+
+h1, h2, h3, h4
+  font-family: $lite
+  color: $details
+  font-size: 3rem
