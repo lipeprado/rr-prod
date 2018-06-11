@@ -6,17 +6,17 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { basename } from 'config';
 import App from 'components/App';
-import configureStore from 'store/configureStore';
 import 'styles/global.sass';
+import configureStore from './store/configureStore';
 
 const store = configureStore();
 
 const renderApp = () => (
-  <BrowserRouter basename={basename}>
-    <Provider store={store}>
+  <Provider store={store}>
+    <BrowserRouter basename={basename}>
       <Route component={App} />
-    </Provider>
-  </BrowserRouter>
+    </BrowserRouter>
+  </Provider>
 );
 
 const root = document.getElementById('app');

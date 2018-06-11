@@ -1,7 +1,6 @@
 import jwtDecode from 'jwt-decode';
 import * as types from './types';
-
-import { API_ONI, TOKEN_NAME, SET_AUTH_TOKEN } from '../../utils';
+import { API, TOKEN_NAME, SET_AUTH_TOKEN } from '../../utils';
 
 export const authRequest = () => {
   return { type: types.AUTH_REQUEST };
@@ -26,7 +25,7 @@ export const login = (user) => {
   return async (dispatch) => {
     try {
       dispatch(authRequest());
-      const response = await API_ONI.post('login/', {
+      const response = await API.post('login/', {
         username: user.username,
         password: user.password,
       });
